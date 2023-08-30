@@ -1,0 +1,33 @@
+
+.left img { 
+    width: 121px;
+    height: 85px;
+}
+
+.mid {
+    display: inline-block;
+    left:301px;
+    top:26px;
+    width: 422px;
+    margin: auto;
+    position:fixed;
+}
+.navbar li a {
+    font-size: 18px;
+    color: white;
+    margin: 0px 15px;
+    text-decoration: none;
+}
+.right{
+    width:195px;
+}
+.right #btn-primary1{
+    font-size: 18px;
+    margin: 0px -4px;
+} 
+.container p{
+    font-size: 22px;
+}
+#carouselExampleCaptions{
+    width: 405px;
+}

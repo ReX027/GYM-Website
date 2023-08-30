@@ -1,0 +1,27 @@
+.left img { 
+    width: 131px;
+    height: 85px
+}
+
+.mid {
+    display: inline-block;
+    left:376px;
+    top:26px;
+    width: 519px;
+    margin: auto;
+    position:fixed;
+}
+
+.navbar li a {
+    font-size: 18px;
+    color: white;
+    margin: 0px 19px;
+    text-decoration: none;
+}
+.right #btn-primary1{
+    font-size: 18px;
+    margin:0px 18px;
+} 
+.container p{
+    font-size: 27px;
+}

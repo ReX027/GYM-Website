@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url("https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=600")no-repeat center center/cover;
+    position:relative;
+    height:100vh;
+    width:100vw;
+}
+.left{
+    position: fixed;
+    left: 8px;
+}
+.left img { 
+    width: 70px;
+    height: 40px;
+}
+
+.mid {
+    display: inline-block;
+    left: 86px;
+    top: 26px;
+    width: 231px;
+    margin: auto;
+    position:fixed;
+}
+
+.navbar li a {
+    font-size: 9.5px;
+    margin: 0px 15px;
+}
+
+.right{
+    position: absolute;
+    top: -84px;
+    right: 13px;
+    width:87px;
+}
+.right #btn-primary1{
+    font-size: 9.5px;
+    margin: 2px 2px;
+    padding: 10px 0px;
+} 
+body .container {  
+    margin: 114px 23px;
+    padding: 74px 35px;
+    position: relative;
+    top: 29px;
+}
+.container p{
+    font-size: 11.5px;
+    padding: 30px 0px;
+}
+#carouselExampleCaptions{
+    width: 302px;
+}
+#carouselExampleCaptions {
+    width: 212px;
+    margin: 0px 244px;
+    position: relative;
+    bottom: 75px;
+    right: 173px;
+    opacity: 0.74;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 294px;
+    overflow: hidden;
+}
+.carousel-inner img {
+    background-color: transparent;
+    height: 295px;
+}
