@@ -1,4 +1,4 @@
 # GYM-Website
-GYM Website using Pug &amp; Node.JS
+GYM Website using Pure Pug &amp; Node.JS
 
 
