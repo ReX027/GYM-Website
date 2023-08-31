@@ -1,0 +1,109 @@
+//- Template Inheritance
+doctype html
+html
+    head
+        title My Site - #{title}
+        block style
+        block scripts
+
+    body
+        header.header
+        .left 
+            img(src='../static/img/logo.png' alt='')
+        .mid
+            ul.navbar
+                li
+                    a.active(href='/') Home
+                li
+                    a(href='/about') About
+                li
+                    a(href='/Classes') Classes
+                li
+                    a(href='/Pricing') Pricing
+        .right
+            button#btn-primary1.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#staticBackdrop') Book class
+            #staticBackdrop.modal.fade(data-bs-backdrop='static' data-bs-keyboard='false' tabindex='-1' aria-labelledby='staticBackdropLabel' aria-hidden='true')
+                .modal-dialog.modal-lg
+                    .modal-content
+                        .modal-header
+                            h1#staticBackdropLabel.modal-title.fs-5 Fill the form to book your class for free! 
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            form.row.g-3(action='/' method='post')
+                                .col-md-6
+                                    label.form-label(for='inputname4') First name
+                                    input.form-control(type='text' name='firstname' placeholder='Adams')
+                                .col-md-6
+                                    label.form-label(for='inputname4') Last name
+                                    input.form-control(type='text' name='lastname' placeholder='Will')
+                                .col-md-12
+                                    label.form-label(for='inputEmail4') Email
+                                    input#inputEmail4.form-control(type='email' name='email' placeholder='name@example.com')
+                                .col-md-3
+                                    label.form-label(for='inputage4') Age
+                                    input#inputEmail4.form-control(type='number' name='age')
+                                #radio1.col-md-4
+                                    h6 Gender
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        h6 Male 
+                                #radio2.col-md-5
+                                    input#flexRadioDefault2.form-check-input(type='radio' name='flexRadioDefault' checked='')
+                                    label.form-check-label(for='flexRadioDefault2')
+                                        h6 Female
+                                .col-12
+                                    label.form-label(for='inputAddress') Address
+                                    input#inputAddress.form-control(type='text' name='address' placeholder='1234 Main St')
+                                .col-md-3
+                                    label.form-label(for='inputCity') City
+                                    input#inputCity.form-control(type='text' name='city')
+                                .col-md-6
+                                    label.form-label(for='inputState') State
+                                    select#inputState.form-select(name='state')
+                                        option(selected='') Choose...
+                                        option Jammu & Kashmir
+                                        option Delhi
+                                        option Mumbai
+                                        option Kolkata
+                                        option Bengalore
+                                .col-md-3
+                                    label.form-label(for='inputZip') Zip
+                                    input#inputZip.form-control(type='text' name='zip')
+                                .col-12
+                                    .form-check
+                                        input#gridCheck.form-check-input(type='checkbox')
+                                        label.form-check-label(for='gridCheck') | Check me out
+                                .col-12
+                                    button.btn.btn-primary(type='submit') Book class
+                        .modal-footer
+                            button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                            button.btn.btn-primary(type='button') Save
+            button#btn-primary1.btn.btn-primary(type='button' data-bs-toggle='modal' data-bs-target='#exampleModal') Sign in
+            #exampleModal.modal.fade(aria-labelledby='exampleModalLabel' aria-hidden='true')
+                .modal-dialog
+                    .modal-content
+                        .modal-header
+                            h1#exampleModalLabel.modal-title.fs-5 Sign in to your profile
+                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                        .modal-body
+                            form
+                                .row.mb-3
+                                    label.col-sm-2.col-form-label(for='inputEmail3') Email
+                                    .col-sm-10
+                                        input#inputEmail3.form-control(type='email')
+                                .row.mb-3
+                                    label.col-sm-2.col-form-label(for='inputPassword3') Password
+                                    .col-sm-10
+                                        input#inputPassword3.form-control(type='password')
+                                button.btn.btn-primary(type='submit') Sign in
+                                button.btn.btn-primary(type='submit') Create your account
+                        .modal-footer
+                            button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
+                            button.btn.btn-primary(type='button') Save changes
+
+        block content
+        footer#footer 
+            |   Copyright @ 2023 Unleash.com All rights reserved.
+
+             
+

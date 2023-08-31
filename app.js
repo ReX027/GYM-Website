@@ -15,7 +15,13 @@ app.set('views',path.join(__dirname,'views')) //setting the views directory
 
 //Endpoints
 app.get('/',(req,res)=>{
-    res.status(200).render('index.pug');
+    res.status(200).render('home.pug');
+})
+app.get('/about',(req,res)=>{
+    res.status(200).render('about.pug');
+})
+app.get('/Classes',(req,res)=>{
+    res.status(200).render('Classes.pug');
 })
 
 app.post('/',(req,res)=>{
@@ -30,11 +36,11 @@ app.post('/',(req,res)=>{
     let outputwrite = `Name of client is ${firstname} ${lastname} , email address - ${email} , ${age} years old ,residing at ${address},${city},${state},${zip}`;
     fs.writeFileSync('output.txt',outputwrite);
     const params = {'message':'Your form has been submitted successfully'};
-    res.status(200).render('index.pug',params);  //status 200 means successful request.
+    res.status(200).render('home.pug',params);  //status 200 means successful request.
 })
 
 // listen to server // starting server
 app.listen(port,()=>{
-    
+
     console.log(`The application started successfully on port ${port}`);
 })
