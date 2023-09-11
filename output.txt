@@ -1,3 +1,1 @@
-# Example of user filling modal form and data recieved from user request(post req) using file system module of node.js
-
-Name of client is Rex Ross , email address - rexross@gmail.com , 21 years old ,residing at 102#3 street khaki road,xyz,Bengalore,530050
+Name of client is Pandey JI , email address - rexross@gmail.com , 20 years old ,residing at 102#3 street khaki road,xyz,Bengalore,530050

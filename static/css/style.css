@@ -77,7 +77,18 @@ body {
     background-color:black;
     border-color:transparent;
 }
-
+/* alert message */
+#alertmessage{
+    position:absolute;
+    left:400px;
+    top: 163px;
+    background-color: #72727245;
+    text-align: center;
+    color: white;
+    border-color: #7e7b7b;
+    visibility:hidden;
+    /* visibility: visible; */
+}
 /* fixing position of radio button in book class button */
 #radio1{
     position: relative;

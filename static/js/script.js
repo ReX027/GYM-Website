@@ -14,3 +14,21 @@ window.addEventListener("scroll", function() {
     }
     prevScrollPos = currentScrollPos;
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const alerts = document.getElementById('alertmessage');
+//     const myform = document.getElementById('myform'); // Replace with the actual element ID
+
+//     fetch('/')
+//         .then(response => response.json())
+//         .then(data => {
+//             if (data.success) {
+//                 alerts.style.visibility = 'visible';
+//                 alerts.textContent = data.message;
+//                 // myform.textContent = data.formData; // Display the form data
+//             }
+//         })
+//         .catch(error => {
+//             console.error(error);
+//         });
+// });

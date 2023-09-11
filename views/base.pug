@@ -2,7 +2,7 @@
 doctype html
 html
     head
-        title My Site - #{title}
+        title Unleash
         block style
         block scripts
 
@@ -29,7 +29,7 @@ html
                             h1#staticBackdropLabel.modal-title.fs-5 Fill the form to book your class for free! 
                             button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
                         .modal-body
-                            form.row.g-3(action='/' method='post')
+                            form.row.g-3(action='/' method='post' id='myform')
                                 .col-md-6
                                     label.form-label(for='inputname4') First name
                                     input.form-control(type='text' name='firstname' placeholder='Adams')
@@ -44,11 +44,11 @@ html
                                     input#inputEmail4.form-control(type='number' name='age')
                                 #radio1.col-md-4
                                     h6 Gender
-                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='gender')
                                     label.form-check-label(for='flexRadioDefault1')
                                         h6 Male 
                                 #radio2.col-md-5
-                                    input#flexRadioDefault2.form-check-input(type='radio' name='flexRadioDefault' checked='')
+                                    input#flexRadioDefault2.form-check-input(type='radio' name='gender' checked='')
                                     label.form-check-label(for='flexRadioDefault2')
                                         h6 Female
                                 .col-12
@@ -74,7 +74,7 @@ html
                                         input#gridCheck.form-check-input(type='checkbox')
                                         label.form-check-label(for='gridCheck') | Check me out
                                 .col-12
-                                    button.btn.btn-primary(type='submit') Book class
+                                    button.btn.btn-primary(type='submit' onclick = 'fun()') Book class
                         .modal-footer
                             button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
                             button.btn.btn-primary(type='button') Save
@@ -100,6 +100,11 @@ html
                         .modal-footer
                             button.btn.btn-secondary(type='button' data-bs-dismiss='modal') Close
                             button.btn.btn-primary(type='button') Save changes
+        #alertmessage.alert.alert-warning.alert-dismissible.fade.show(role='alert')
+            strong Congratulations!!
+            |  Your form is submitted. We will contact you soon.
+            button.btn-close(type='button' data-bs-dismiss='alert' aria-label='Close')
+
 
         block content
         footer#footer 
