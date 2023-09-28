@@ -3,7 +3,7 @@ const path = require("path"); //module to join the path of pug file to express a
 const fs = require('fs'); //file system module to read/write file
 
 const app = express(); // Intializing express app
-const port = 80 // setting port to default as 80
+const port = 3000 // setting port to default as 80
 
 //database connection
 const mongoose = require('mongoose');
